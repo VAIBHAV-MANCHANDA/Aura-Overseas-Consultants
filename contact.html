@@ -357,7 +357,7 @@
   (function() {
     // Initializing with your Public Key
     emailjs.init({
-      publicKey: "-_tpal5OuvsnSKdpW",
+      publicKey: "",
     });
   })();
 
@@ -384,7 +384,7 @@
             "User Message: " + document.getElementById("message").value
         };
 
-        emailjs.send("service_0arr789", "template_kk6b8iq", templateParams)
+        emailjs.send("service", "template", templateParams)
           .then(function() {
             alert("✅ Form submitted successfully!");
             form.reset();
